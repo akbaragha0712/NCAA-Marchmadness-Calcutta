@@ -40,6 +40,8 @@ having exceeded the salary cap.
 
 Working backwards from our final output. We want a max price value above which we are taking on too much risk for the likelihood that the team wins a certain number of rounds. If we use a regularized logistic regression to predict the likelihood a team wins a match up. For simplicity, we assume that the team with the higher probability wins the match up each time and we pick the 2nd, 3rd, 4th, 5th, and 6th round matchups accordingly. 
 
+For example, 0.9x0.8x0.7x0.6x0.5x0.4 = 0.06 or a 6% chance of winning the entire league. Like so each team will have a % chance of winning. To convert this chance of winning to an appropriate price we must know what the prize for picking the winning team will be. Based on history, I believe the pot will be approximately $2,000 with 11 players - this means the prize for the winning team will be $440. For a team with a 6% probability, the most we'd want to pay for round 6 is $27. 
+
 ## Misc
 
 For match up prediction inspiration refer to:
