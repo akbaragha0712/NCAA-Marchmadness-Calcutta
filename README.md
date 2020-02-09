@@ -36,5 +36,11 @@ cap will only count for half as much in the bidding process. For example, an own
 cap can still bid on a team, but must pay twice as much for that team as a similar owner buying that team without
 having exceeded the salary cap.
 
+## Brainstorming
+
+Working backwards from our final output. We want a max price value above which we are taking on too much risk for the likelihood that the team wins a certain number of rounds. If we use a regularized logistic regression to predict the likelihood a team wins a match up. For simplicity, we assume that the team with the higher probability wins the match up each time and we pick the 2nd, 3rd, 4th, 5th, and 6th round matchups accordingly. 
+
+## Misc
+
 For match up prediction inspiration refer to:
 https://multithreaded.stitchfix.com/blog/2016/11/22/nba-rankings/
